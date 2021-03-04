@@ -10,6 +10,7 @@ import { selectAccount } from 'store/account/accountSelector';
 import logoImage from 'assets/img/logo.png';
 import telegramImage from 'assets/img/telegram.png';
 import twitterImage from 'assets/img/twitter.png';
+import githubImage from 'assets/img/github.png';
 import mediumImage from 'assets/img/medium.png';
 
 interface StateFromProps {
@@ -45,6 +46,10 @@ const FarmComposition = ({ account }: Props) => {
 
   //const totalValueLocked = () => pool1TVL + pool2TVL;
 
+  const openLink = (url: string) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <ParticlesContainer>
       <Header />
@@ -68,14 +73,14 @@ const FarmComposition = ({ account }: Props) => {
             <span>Reflect DAO is a DeFi protocol which is launched by sodu and me. Also allows users to farm NFTs.</span>
           </div>
           <div className='center-h mt-50'>
-            <IconButton className='mr-50'>
-              <img src={telegramImage} alt='Telegram Link' />
+            <IconButton className='mr-50' onClick={() => openLink('https://t.me/echodao')}>
+              <img src={telegramImage} width="50" alt='Telegram Link' />
             </IconButton>
-            <IconButton className='mr-50'>
-              <img src={twitterImage} alt='Telegram Link' />
+            <IconButton className='mr-50' onClick={() => openLink('https://github.com/EchoDao-BSC')}>
+              <img src={githubImage} width="50" alt='Github Link' />
             </IconButton>
-            <IconButton>
-              <img src={mediumImage} alt='Telegram Link' />
+            <IconButton onClick={() => openLink('https://echodao.medium.com')}>
+              <img src={mediumImage} width="50" alt='Medium Link' />
             </IconButton>
           </div>
         </div>
