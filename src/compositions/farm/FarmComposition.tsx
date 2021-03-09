@@ -9,7 +9,7 @@ import { RootState } from 'types';
 import { selectAccount } from 'store/account/accountSelector';
 import logoImage from 'assets/img/logo.png';
 import telegramImage from 'assets/img/telegram.png';
-import twitterImage from 'assets/img/twitter.png';
+import discordImage from 'assets/img/discord.png';
 import githubImage from 'assets/img/github.png';
 import mediumImage from 'assets/img/medium.png';
 
@@ -75,6 +75,9 @@ const FarmComposition = ({ account }: Props) => {
           <div className='center-h mt-50'>
             <IconButton className='mr-50' onClick={() => openLink('https://t.me/echodao')}>
               <img src={telegramImage} width="50" alt='Telegram Link' />
+            </IconButton>
+            <IconButton className='mr-50' onClick={() => openLink('https://discord.gg/NGWmgxVGNm')}>
+              <img src={discordImage} width="50" alt='Discord Link' />
             </IconButton>
             <IconButton className='mr-50' onClick={() => openLink('https://github.com/EchoDao-BSC')}>
               <img src={githubImage} width="50" alt='Github Link' />
