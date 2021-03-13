@@ -16,9 +16,14 @@ const Header: React.FC<Props> = ({ history }: Props) => {
 			    <img src={Logo} height='50' alt='Echo DAO' />
           <span className={styles.logoText}>Echo DAO</span>
         </Button>
-        <Button onClick={() => {}} className='btn-header' >
-          Join Presale
-        </Button>
+        <div>
+          <Button onClick={() => {}} className='btn-header' style={{marginRight: 15}} disabled>
+            Launch App
+          </Button>
+          <Button onClick={() => {}} className='btn-header' >
+            Join Presale
+          </Button>
+        </div>
       </div>
     </Container>
   )
