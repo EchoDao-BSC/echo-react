@@ -12,10 +12,10 @@ import Tooltip from './Tooltip';
 import './styles.scss';
 
 const data = [
-  { title: 'Presale', value: 20, color: '#bf38fe' },
-  { title: 'Development', value: 25, color: '#f05536' },
+  { title: 'Presale', value: 4.32, color: '#bf38fe' },
+  { title: 'Development', value: 30.68, color: '#f05536' },
   { title: 'Pancake Liquidity', value: 20, color: '#2cae57' },
-  { title: 'Marketing', value: 10, color: '#e2e113' },
+  { title: 'Marketing', value: 20, color: '#e2e113' },
   { title: 'Ecosystem Growth', value: 25, color: '#eb0d87' },
 ];
 
