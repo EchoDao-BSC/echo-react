@@ -13,8 +13,8 @@ import './styles.scss';
 
 const data = [
   { title: 'Presale', value: 20, color: '#bf38fe' },
-  { title: 'Development', value: 15, color: '#f05536' },
-  { title: 'Pancake Liquidity', value: 30, color: '#2cae57' },
+  { title: 'Development', value: 25, color: '#f05536' },
+  { title: 'Pancake Liquidity', value: 20, color: '#2cae57' },
   { title: 'Marketing', value: 10, color: '#e2e113' },
   { title: 'Ecosystem Growth', value: 25, color: '#eb0d87' },
 ];
